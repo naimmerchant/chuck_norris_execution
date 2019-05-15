@@ -14,11 +14,11 @@ app.css.append_css({"external_url": "https://codepen.io/chriddyp/pen/bWLwgP.css"
 
 ####### Layout of the app ########
 app.layout = html.Div([
-    html.H2('Select your state'),
+    html.H2('Climate Risks'),
     dcc.Dropdown(
         id='dropdown',
-        options=[{'label': i, 'value': i} for i in ['Virgina', 'New York', 'Massachusetts']],
-        value='Virginia'
+        options=[{'label': i, 'value': i} for i in ['Virgina', 'New York', 'Massachusetts', 'Maryland']],
+        value='Select a state'
     ),
     html.Div(id='display-value')
 ])
