@@ -18,7 +18,7 @@ app.layout = html.Div([
     dcc.Dropdown(
         id='dropdown',
         options=[{'label': i, 'value': i} for i in ['Virgina', 'New York', 'Massachusetts']],
-        value='punch'
+        value='Virginia'
     ),
     html.Div(id='display-value')
 ])
@@ -28,7 +28,7 @@ app.layout = html.Div([
 @app.callback(dash.dependencies.Output('display-value', 'children'),
               [dash.dependencies.Input('dropdown', 'value')])
 def display_value(value):
-    return 'Chuck Norris will execute by "{}"'.format(value)
+    return 'You have selected "{}"'.format(value)
 
 
 ######### Run the app #########
