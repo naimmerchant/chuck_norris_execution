@@ -25,7 +25,7 @@ app.layout = html.Div([
         options=[{'label': i, 'value': i} for i in ['Virgina', 'New York', 'Massachusetts', 'Maryland']],
         value='Select a state'
     ),
-    html.Div(id='display-value')
+    html.Div(id='display-value'),
     html.Div(id='display-value2')
 ])
 
