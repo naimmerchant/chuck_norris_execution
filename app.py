@@ -26,6 +26,7 @@ app.layout = html.Div([
         value='Select a state'
     ),
     html.Div(id='display-value')
+    html.Div(id='display-value2')
 ])
 
 
@@ -34,7 +35,7 @@ app.layout = html.Div([
               [dash.dependencies.Input('dropdown', 'value')])
 def display_value(value):
     return 'You have selected "{}"'.format(value)
-@app.callback(dash.dependencies.Output('display-value', 'children'),
+@app.callback(dash.dependencies.Output('display-value2', 'children'),
               [dash.dependencies.Input('dropdown2', 'value')])
 def display_value(value):
     return 'You have selected "{}"'.format(value)
